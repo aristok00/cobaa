@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Running Text Digital</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000; /* Latar belakang gelap */
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Penuh layar */
+    }
+
+    .running-text {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      font-family: "Courier New", Courier, monospace; /* Tampilan digital */
+      font-size: 2rem;
+      color: red; /* Warna teks merah */
+    }
+
+    .running-text span {
+      display: inline-block;
+      animation: scroll-left 10s linear infinite;
+      padding-left: 100%;
+    }
+
+    @keyframes scroll-left {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="running-text">
+    <span>Zahro Bocil Mayak</span>
+  </div>
+</body>
+</html>
